@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocks, Bones & Biodiversity</title>
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --mc-green: #55FF55;
+            --mc-gold: #FFAA00;
+            --mc-aqua: #55FFFF;
+            --mc-dark-bg: #121212;
+            --mc-card-bg: #1e1e24;
+            --mc-border: #33333d;
+        }
+
+        body {
+            background-color: var(--mc-dark-bg);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .reveal {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            font-family: 'Press Start 2P', monospace;
+            text-transform: uppercase;
+            line-height: 1.4;
+        }
+
+        .reveal h1 { font-size: 1.8em; color: var(--mc-green); text-shadow: 3px 3px #000; }
+        .reveal h2 { font-size: 1.2em; color: var(--mc-gold); text-shadow: 2px 2px #000; }
+        .reveal h3 { font-size: 0.9em; color: var(--mc-aqua); }
+
+        .reveal p, .reveal li {
+            font-size: 0.75em;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .subtitle {
+            color: #aaaaaa !important;
+            font-size: 0.8em !important;
+            margin-top: 20px;
+        }
+
+        /* Card Container Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .card {
+            background: var(--mc-card-bg);
+            border: 2px solid var(--mc-border);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-mc { border-left: 5px solid var(--mc-green); }
+        .card-real { border-left: 5px solid var(--mc-aqua); }
+
+        .card h4 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.7em;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .card-mc h4 { color: var(--mc-green); }
+        .card-real h4 { color: var(--mc-aqua); }
+
+        .badge {
+            background: #333;
+            color: var(--mc-gold);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.5em;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        ul { margin-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        /* Table Styling */
+        table.mc-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.55em;
+            margin-top: 20px;
+        }
+
+        table.mc-table th {
+            background-color: #2a2a35;
+            color: var(--mc-gold);
+            font-family: 'Press Start 2P', monospace;
+            padding: 12px;
+            border: 1px solid var(--mc-border);
+            text-align: left;
+        }
+
+        table.mc-table td {
+            padding: 10px;
+            border: 1px solid var(--mc-border);
+            background-color: var(--mc-card-bg);
+        }
+
+        .highlight { color: var(--mc-gold); font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1 -->
+            <section>
+                <h1>Blocks, Bones & Biodiversity</h1>
+                <h2>Real Wildlife Science in Vanilla Minecraft</h2>
+                <p class="subtitle">English Presentation | Connecting Game Loops to Ecology</p>
+            </section>
+
+            <!-- Slide 2 -->
+            <section>
+                <h2>Gaming as an Ecological Classroom</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Global Platform</h4>
+                        <ul>
+                            <li>Over 300 million active players worldwide.</li>
+                            <li>Provides hands-on experience with ecosystem loops.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Mojang Design Rule</h4>
+                        <ul>
+                            <li>Real-world animals are <span class="highlight">never hostile by default</span>.</li>
+                            <li>Designed explicitly to encourage empathy for wildlife.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3 -->
+            <section>
+                <h2>Key Scientific Concepts</h2>
+                <div class="card" style="text-align: left;">
+                    <ul>
+                        <li><span class="highlight">Extinct in the Wild:</span> Species survive only in captivity or under human care.</li>
+                        <li><span class="highlight">De-Extinction:</span> Scientific process of reviving extinct species via ancient DNA or fossils.</li>
+                        <li><span class="highlight">Natal Homing:</span> Animals returning to their exact birth site to reproduce.</li>
+                        <li><span class="highlight">Keystone Species:</span> Species on which an entire ecosystem heavily depends.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 4 -->
+            <section>
+                <h2>Presentation Roadmap</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <span class="badge">Part 1</span>
+                        <ul>
+                            <li>Ancient Mobs & Archaeology</li>
+                            <li>Underground Fossils & Megafauna</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <span class="badge">Part 2</span>
+                        <ul>
+                            <li>Endangered Mobs & Conservation</li>
+                            <li>Climate & Defensive Adaptations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 5 -->
+            <section>
+                <h2>The Sniffer: Ancient Life</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>In-Game Status</h4>
+                        <ul>
+                            <li>Completely extinct in natural survival worlds.</li>
+                            <li>Does not spawn naturally anywhere on the surface.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Recovery Method</h4>
+                        <ul>
+                            <li>Excavated from <span class="highlight">Suspicious Sand</span> in Warm Ocean Ruins.</li>
+                            <li>Requires hatching a Sniffer Egg on a Moss Block.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 6 -->
+            <section>
+                <h2>Vanilla Archaeology</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>The Brush Tool</h4>
+                        <ul>
+                            <li>Uncovers fragile items from Suspicious Sand and Gravel.</li>
+                            <li>Rushing or using shovels breaks the artifact inside.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Paleontology Parallel</h4>
+                        <ul>
+                            <li>Mirrors soft brushes used on real excavation sites.</li>
+                            <li>Teaches patience and proper preservation techniques.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7 -->
+            <section>
+                <h2>Lost Flora & Co-Evolution</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Ancient Plant Discovery</h4>
+                        <ul>
+                            <li>Sniffers dig up <span class="highlight">Torchflower Seeds</span> & <span class="highlight">Pitcher Pods</span>.</li>
+                            <li>Only ancient mobs can locate these seeds.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Real World Co-Evolution</h4>
+                        <ul>
+                            <li>Plants and animals evolve interdependently.</li>
+                            <li>When an animal dies out, dependent plants vanish too.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8 -->
+            <section>
+                <h2>Science of De-Extinction</h2>
+                <div class="card" style="text-align: left;">
+                    <h4>Reviving Ancient Species</h4>
+                    <ul>
+                        <li>Hatching Sniffer eggs in game mirrors modern genetics attempting to revive lost species.</li>
+                        <li><span class="highlight">Class Reflection:</span> Is it enough to revive a species if its natural habitat no longer exists?</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 9 -->
+            <section>
+                <h2>Underground Skeletal Fossils</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Structure Design</h4>
+                        <ul>
+                            <li>Rare skeletal structures buried deep underground.</li>
+                            <li>Generates strictly in Deserts and Swamps.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Block Composition</h4>
+                        <ul>
+                            <li>Made entirely of <span class="highlight">Bone Blocks</span> and <span class="highlight">Coal Ore</span>.</li>
+                            <li>Proves giant prehistoric life once existed in-game.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 10 -->
+            <section>
+                <h2>Real-World Fossilization</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Petrified Bones</h4>
+                        <ul>
+                            <li>Mineralized bones petrify over millions of years.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Organic Decay & Coal</h4>
+                        <ul>
+                            <li>Coal forms from ancient carbonized organic matter.</li>
+                            <li>Coal Ore around Minecraft fossils accurately reflects real carbonization.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 11 -->
+            <section>
+                <h2>Prehistoric Megafauna Scale</h2>
+                <div class="card" style="text-align: left;">
+                    <h4>Player vs. Ancient Skeletons</h4>
+                    <ul>
+                        <li>Minecraft Player = 2 blocks tall (~2 meters / 6.5 feet).</li>
+                        <li>Fossil ribcages span 15–20 blocks across.</li>
+                        <li>Accurately represents the massive scale of Earth's ancient prehistoric megafauna.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 12 -->
+            <section>
+                <h2>Mass Extinction Events</h2>
+                <div class="card" style="text-align: left;">
+                    <h4>Earth's Prehistoric Shifts</h4>
+                    <ul>
+                        <li>Earth has experienced 5 major mass extinction events.</li>
+                        <li>Driven by climate shocks, volcanic eruptions, and meteor impacts.</li>
+                        <li>Minecraft’s buried fossils represent a lost biological era.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 13 -->
+            <section>
+                <h2>Axolotls: Critically Endangered</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>In-Game Role</h4>
+                        <ul>
+                            <li>Spawns in <span class="highlight">Lush Caves</span>.</li>
+                            <li>Grants players the <span class="highlight">Regeneration</span> status effect in underwater fights.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Real-World Status</h4>
+                        <ul>
+                            <li>Native strictly to Lake Xochimilco, Mexico.</li>
+                            <li>Critically threatened by habitat pollution and invasive species.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 14 -->
+            <section>
+                <h2>Genetic Rarity: Blue Axolotl</h2>
+                <div class="card" style="text-align: left;">
+                    <h4>1 in 1,200 Breeding Rarity</h4>
+                    <ul>
+                        <li>Breeding two axolotls has a 0.083% chance to yield a Blue Axolotl.</li>
+                        <li>Simulates extreme genetic mutations.</li>
+                        <li>Highlights how fragile genetic diversity becomes when populations collapse.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 15 -->
+            <section>
+                <h2>Sea Turtles & Natal Homing</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>In-Game Behavior</h4>
+                        <ul>
+                            <li>Sea Turtles always return to their exact <span class="highlight">Home Beach</span> to lay eggs.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Real-World Science</h4>
+                        <ul>
+                            <li><span class="highlight">Natal Homing:</span> Turtles use Earth's magnetic fields to return to their birth beach.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 16 -->
+            <section>
+                <h2>Beach Conservation Mechanics</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>In-Game Threats</h4>
+                        <ul>
+                            <li>Zombies, skeletons, and players crushing eggs.</li>
+                            <li>Requires fencing and torch placement.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Real-World Patrols</h4>
+                        <ul>
+                            <li>Mirrors real conservationists protecting nesting sites from poachers and predators.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 17 -->
+            <section>
+                <h2>Giant Pandas & Habitat Loss</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Bamboo Jungle Dependence</h4>
+                        <ul>
+                            <li>Spawns strictly in rare Bamboo Jungles.</li>
+                            <li>Requires nearby bamboo blocks to breed.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Forest Fragmentation</h4>
+                        <ul>
+                            <li>Deforestation isolates wild panda populations.</li>
+                            <li>Limits food access and genetic diversity.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 18 -->
+            <section>
+                <h2>In-Game Panda Genetics</h2>
+                <div class="card" style="text-align: left;">
+                    <h4>Hidden Allele System</h4>
+                    <ul>
+                        <li>Pandas carry hidden traits: <i>Normal, Lazy, Worried, Playful, Aggressive, Weak, Brown</i>.</li>
+                        <li>Uses dominant and recessive genetic inheritance rules.</li>
+                        <li>Teaches basic Mendelian biology through gameplay.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 19 -->
+            <section>
+                <h2>Honeybees: Keystone Pollinators</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Pollination Loop</h4>
+                        <ul>
+                            <li>Bees gather pollen from flowers and drop particles over crops.</li>
+                            <li>Directly <span class="highlight">accelerates crop growth</span>.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Global Agriculture</h4>
+                        <ul>
+                            <li>Bees pollinate 1 out of every 3 bites of food human beings consume.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 20 -->
+            <section>
+                <h2>Sustainable Harvesting</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Campfire Smoke</h4>
+                        <ul>
+                            <li>Taking honey triggers bee aggression unless a <span class="highlight">Campfire</span> is placed below.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Beekeeping Science</h4>
+                        <ul>
+                            <li>Smoke masks alarm pheromones, allowing peaceful harvesting without harming hives.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 21 -->
+            <section>
+                <h2>Wolves & Domestication</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Pack Mechanics</h4>
+                        <ul>
+                            <li>Neutral wild packs defend each other.</li>
+                            <li>Tamed with bones to protect the player.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>History of Domestication</h4>
+                        <ul>
+                            <li>Mirrors early human domestication of wild wolves into domestic working dogs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 22 -->
+            <section>
+                <h2>Ocelots, Cats & Settlement Protection</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Creeper Deterrents</h4>
+                        <ul>
+                            <li>Cats scare away <span class="highlight">Creepers</span> and Phantoms.</li>
+                            <li>Found near Village settlements.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Historical Pest Control</h4>
+                        <ul>
+                            <li>Ancient civilizations kept cats to protect agricultural grain stores from pests.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 23 -->
+            <section>
+                <h2>Apex Predators & Ecosystem Control</h2>
+                <div class="card" style="text-align: left;">
+                    <h4>Trophic Cascades</h4>
+                    <ul>
+                        <li>Wild wolves hunt sheep, rabbits, and skeletons automatically.</li>
+                        <li><span class="highlight">Real Science:</span> Apex predators prevent overpopulation and protect habitat vegetation from overgrazing.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 24 -->
+            <section>
+                <h2>Polar Bears & Arctic Survival</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Maternal Aggression</h4>
+                        <ul>
+                            <li>Neutral adults become instantly <span class="highlight">hostile if a cub is nearby</span>.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Arctic Vulnerability</h4>
+                        <ul>
+                            <li>Shows extreme parental protection needed in harsh frozen ocean biomes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 25 -->
+            <section>
+                <h2>Frog Climate Adaptation</h2>
+                <div class="card" style="text-align: left;">
+                    <h4>Temperature Variant System</h4>
+                    <ul>
+                        <li>Tadpole maturation temperature determines adult frog color:
+                            <ul>
+                                <li><span class="highlight">Warm Biomes:</span> White Frog</li>
+                                <li><span class="highlight">Temperate Biomes:</span> Orange Frog</li>
+                                <li><span class="highlight">Cold Biomes:</span> Green Frog</li>
+                            </ul>
+                        </li>
+                        <li>Illustrates climate adaptation in amphibians.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 26 -->
+            <section>
+                <h2>Armadillos: Shell Defense</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>In-Game Mechanics</h4>
+                        <ul>
+                            <li>Curls into a protective block when threats run near.</li>
+                            <li>Drops <span class="highlight">Scutes</span> for crafting Wolf Armor.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Keratin Armor</h4>
+                        <ul>
+                            <li>Real armadillo shells are composed of keratin plates that deflect predator attacks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 27 -->
+            <section>
+                <h2>Camels: Arid Adaptations</h2>
+                <div class="grid-2">
+                    <div class="card card-mc">
+                        <h4>Height Advantage</h4>
+                        <ul>
+                            <li>Tall enough that standard 1-block melee mobs cannot reach the rider.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-real">
+                        <h4>Heat Elevation</h4>
+                        <ul>
+                            <li>Long legs keep the camel's core body away from radiant ground heat.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 28 -->
+            <section>
+                <h2>Summary Matrix</h2>
+                <table class="mc-table">
+                    <thead>
+                        <tr>
+                            <th>Mob / Structure</th>
+                            <th>In-Game Feature</th>
+                            <th>Real Science Parallel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sniffer</td>
+                            <td>Warm Ocean Ruins / Seeds</td>
+                            <td>De-Extinction & Archaeology</td>
+                        </tr>
+                        <tr>
+                            <td>Fossils</td>
+                            <td>Bone Blocks & Coal Ore</td>
+                            <td>Petrified Prehistoric Megafauna</td>
+                        </tr>
+                        <tr>
+                            <td>Axolotl</td>
+                            <td>Lush Caves / 1:1200 Blue</td>
+                            <td>Critically Endangered Species</td>
+                        </tr>
+                        <tr>
+                            <td>Sea Turtle</td>
+                            <td>Home Beach Nesting</td>
+                            <td>Natal Homing & Beach Patrols</td>
+                        </tr>
+                        <tr>
+                            <td>Honeybee</td>
+                            <td>Crop Growth Acceleration</td>
+                            <td>Keystone Pollination</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Slide 29 -->
+            <section>
+                <h2>Core Lessons for Our World</h2>
+                <div class="card" style="text-align: left;">
+                    <ul>
+                        <li><span class="highlight">1. Extinction is Permanent:</span> In Minecraft you can rebuild broken blocks; in real life lost species require complex science to recover.</li>
+                        <li><span class="highlight">2. Biome Interdependence:</span> Mobs, flora, and climate rely on delicate balance.</li>
+                        <li><span class="highlight">3. Interactive Learning:</span> Gaming provides powerful avenues for ecological empathy.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 30 -->
+            <section>
+                <h1>Thank You!</h1>
+                <h2>Questions & Discussion</h2>
+                <div class="card" style="margin-top: 30px;">
+                    <p><i>"Which real-world endangered animal should Mojang add to Vanilla Minecraft next?"</i></p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Reveal.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: 'c/t',
+            transition: 'fade',
+            transitionSpeed: 'fast'
+        });
+    </script>
+</body>
+</html>
